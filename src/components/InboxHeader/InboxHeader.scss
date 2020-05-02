@@ -1,0 +1,56 @@
+@import '../../assets/styles/variables.scss';
+
+.inbox-header-container {
+    margin: 14px;
+    display: flex;
+    align-items: center;
+    .right {
+        margin-left: auto;
+    }
+    .custom-select {
+        height: 20px;
+        padding: 5px;
+        border: 1.5px solid #d5d5d6;
+        border-radius: 4px;
+        cursor: pointer;
+        position: relative;
+        min-width: 100px;
+        select {
+            height: 20px;
+            -webkit-appearance: none;
+            appearance: none;
+            border: transparent;
+            -moz-appearance: none;
+            width: 100%;
+            padding: 0 10px;
+            color: $gray-dark;
+            &:focus {
+                outline: none;
+            }
+        }
+        &:after {
+            content: "\21F3";
+            position: absolute;
+            top: 0;
+            right: 0;
+            padding: 0 10px;
+            line-height: 30px;
+            color: $blue;
+            border-left: 1px solid $gray-dark;
+        }
+    }
+}
+
+.badge {
+    margin-left: 10px;
+    width: 30px;
+    height: 20px;
+    border-radius: 12px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    &.error {
+        background-color: $red;
+        color: $white;
+    }
+}

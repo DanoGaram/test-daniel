@@ -1,0 +1,18 @@
+.email-detail-container {
+    width: 65%;
+    .card-email-body {
+        border-radius: 5px;
+    }
+    .email-info{
+        padding: 20px;
+    }
+    .card-email-actions {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .card-email-content {
+        padding: 20px;
+        min-height: 250px;
+    }
+}

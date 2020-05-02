@@ -1,0 +1,25 @@
+body {
+    color: $font-prymary-color;
+    background-color: #EEF4F9;
+    font-family: $font-primary;
+    font-size: $font-size-normal;
+    margin: 0px;
+}
+
+.title {
+    font-size: $font-size-big;
+    font-weight: bold;
+}
+
+hr {
+    background-color: $gray-dark;
+    height: 1px;
+    border: 0;
+    margin: 0;
+}
+
+.truncate {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }

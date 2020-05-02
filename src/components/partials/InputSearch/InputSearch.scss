@@ -1,0 +1,27 @@
+@import '../../../assets/styles/variables.scss';
+
+.container-input-search{
+    padding: 10px;
+    display: flex;
+    border-radius: 2px;
+    margin: 20px;
+    border: 1px solid $gray;
+    box-shadow: 0 1px 15px 0 rgba(0, 0, 0, 0.1);
+
+
+
+
+    .input-search{
+        flex: 1;
+        border: none;
+    
+        &:focus{
+            border: none;
+            outline: none;
+        }
+    }
+
+    .icon-search{
+        width: 20px;
+    }
+}

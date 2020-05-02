@@ -1,0 +1,42 @@
+@import '../../../assets/styles/variables.scss';
+
+.email-item {
+    padding: 20px;
+    display: flex;
+    flex: 1;
+    cursor: default;
+    &:hover {
+        opacity: 0.5;
+        transition: 0.3s;
+    }
+    &.active {
+        background-color: $gray;
+    }
+    &.unread {
+        background-color: $blue-bg;
+        border-left: 4px solid $blue;
+        .title {
+            color: $blue;
+        }
+    }
+    .gray {
+        color: $gray-dark;
+    }
+    .column-info {
+        width: 80%;
+        flex-direction: column;
+        display: flex;
+        span:first-child {
+            margin-bottom: 10px;
+        }
+    }
+    .column-date {
+        width: 20%;
+        flex-direction: column;
+        display: flex;
+        text-align: right;
+        span:first-child {
+            margin-bottom: 10px;
+        }
+    }
+}

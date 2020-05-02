@@ -1,0 +1,40 @@
+@import '../../../assets/styles/variables.scss';
+
+.button_general {
+    font-size: $font-size-normal;
+    font-weight: bold;
+    color: $white;
+    padding: 8px;
+    margin: auto 8px;
+    border-radius: 2px;
+    width: fit-content;
+    &.pressed {
+        transform: scale(1.2);
+        transition: all 0.1s ease;
+    }
+    &:hover{
+        opacity: 0.8;
+        // color: $blue-dark;
+        cursor: pointer;
+    }
+    &.primary {
+        background-color: $blue;
+    }
+    &.error {
+        background-color: $red;
+    }
+    &.basic {
+        background-color: transparent;
+        color: $font-prymary-color;
+        border: 1px solid $gray-dark;
+    }
+    &.info {
+        color: $gray-dark;
+        background-color: $gray;
+        border: 1px solid $gray-dark;
+    }
+    &.right {
+        margin-left: auto;
+    }
+}
+

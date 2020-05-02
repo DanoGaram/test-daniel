@@ -1,0 +1,21 @@
+.email-list-container {
+    overflow-y: scroll;
+    max-height: calc(100vh - 157px);
+    scrollbar-color: rgba(228, 230, 232, 1);
+    scrollbar-width: thin;
+    .ul-email {
+        list-style-type:none;
+        margin: 0;
+        padding: 0;
+    }
+}
+::-webkit-scrollbar {
+    width: 0.25rem;
+  }
+  ::-webkit-scrollbar-thumb {
+    background:rgba(228, 230, 232, 1);
+    border-radius: 5px;
+  }
+  ::-webkit-scrollbar-track {
+    background:transparent;
+  }
